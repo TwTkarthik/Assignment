@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cakes">Cakes</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#cart">Cart</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Sweet Treats Cake Shop</h1>
+        <p>Delicious cakes for every celebration!</p>
+    </section>
+
+    <section id="cakes" class="cake-section">
+        <h2>Our Best-Selling Cakes</h2>
+        <div class="cake-grid">
+            <div class="cake-card">
+                <img src="https://r4.wallpaperflare.com/wallpaper/266/972/49/food-cake-berries-cream-wallpaper-2537e53be749e5ab0e0f649730469e53.jpg" width=400 alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>$24.9</p>
+                <button onclick="addToCart('Chocolate Cake', 24.99)">Add to Cart</button>
+            </div>
+            <div class="cake-card">
+                <img src="https://r4.wallpaperflare.com/wallpaper/762/368/834/cake-fruit-strawberries-food-wallpaper-739c616dc9f22e893b58ab56bc914cb7.jpg" width=400 alt="Vanilla Cake">
+                <h3>Vanilla Cake</h3>
+                <p>$19.9</p>
+                <button onclick="addToCart('Vanilla Cake', 19.99)">Add to Cart</button>
+            </div>
+            <div class="cake-card">
+                <img src="https://cdn.thomsonline.in/wp-content/uploads/2019/08/BUTTERSCOTCH-CAKE-3-750x500.jpg" width=400 alt="Red Velvet Cake">
+                <h3>ButterScotch Cake</h3>
+                <p>$29.9</p>
+                <button onclick="addToCart('ButterScotch', 29.99)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+    </section>
+
+    <footer>
+        <p>Contact us: info@sweettreats.com | Follow us on social media!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
